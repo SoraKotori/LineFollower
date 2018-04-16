@@ -1,5 +1,8 @@
 #include "BitmapProcessor.h"
-#include <cassert>
+#include <cstring>
+#include <cmath>
+
+using namespace std;
 
 #pragma pack(push, 1)
 typedef struct BitmapStruct

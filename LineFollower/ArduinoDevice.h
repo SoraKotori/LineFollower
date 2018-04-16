@@ -8,8 +8,6 @@
 extern "C" {
 #endif // __cplusplus 
 
-	typedef struct ArduinoDevice ArduinoDevice;
-
 	typedef struct ArduinoDevice
 	{
 		HANDLE hFile;

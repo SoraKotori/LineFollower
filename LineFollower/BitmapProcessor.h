@@ -2,8 +2,6 @@
 #include <fstream>
 #include <memory>
 
-using namespace std;
-
 class Bitmap
 {
 public:
@@ -31,6 +29,6 @@ public:
 
 private:
 	bool Opened;
-	streamsize FileSize;
-	unique_ptr<char[]> FileData;
+	std::streamsize FileSize;
+	std::unique_ptr<char[]> FileData;
 };

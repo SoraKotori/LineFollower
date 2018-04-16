@@ -704,6 +704,14 @@ Transform::Transform() :
 			return false;
 		}
 
+		IMFAttributesPtr AttributesPtr = nullptr;
+		hResult = (*this)->GetAttributes(&AttributesPtr);
+		if (FAILED(hResult))
+		{
+			return false;
+		}
+
+		BOOL BResult = MFGetAttributeUINT32(AttributesPtr, MF_SA_D3D_AWARE, FALSE);
 		//MFT_INPUT_STREAM_INFO StreamInfo =
 		//{
 		//	0LL,
